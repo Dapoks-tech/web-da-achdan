@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMP DARUL ARQOM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#f59e0b'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed top-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="/gambar/Logoberanda/images logo.jpg" alt="Logo Sekolah" class="w-10 h-10 rounded-full mr-3">
+                        <h1 class="text-xl font-bold text-primary">SMP MUHAMADIYAH DARUL ARQOM</h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#beranda" class="text-gray-900 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition duration-300">Beranda</a>
+                        <a href="#profil" class="text-gray-900 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition duration-300">Profil Sekolah</a>
+                        <a href="#galeri" class="text-gray-900 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition duration-300">Galeri</a>
+                        <a href="#prestasi" class="text-gray-900 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition duration-300">Prestasi</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="bg-gray-200 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+                <a href="#beranda" class="text-gray-900 hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition duration-300">Beranda</a>
+                <a href="#profil" class="text-gray-900 hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition duration-300">Profil Sekolah</a>
+                <a href="#galeri" class="text-gray-900 hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition duration-300">Galeri</a>
+                <a href="#prestasi" class="text-gray-900 hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition duration-300">Prestasi</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Beranda Sekolah -->
+    <section id="beranda" class="pt-16 bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">WELCOME TO SMP DARUL-ARQOM</h1>
+                <p class="text-xl md:text-2xl mb-8">MAJELIS PENDIDIKAN MENENGAH MUHAMMADIYAH</p>
+                <a href="#profil" class="bg-secondary text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-yellow-600 transition duration-300">JELAJAHI</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profil Sekolah -->
+    <section id="profil" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Profil Sekolah</h2>
+                <p class="text-lg text-gray-600">Mengenal lebih dekat dengan sekolah kami</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Visi</h3>
+                    <p class="text-gray-700">Terciptanya Generasi Intelektual, Leadership, dan Entrepreneurship yang Islami.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Misi</h3>
+                    <p class="text-gray-700">Menyelenggarakan dan mengembangkan pendidikan Islam untuk membekali peserta didik agar mempunyai pengetahuan dan kompetensi ilmu-ilmu dasar keislaman, ilmu pengetahuan dan teknologi serta seni dan budaya.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Motto</h3>
+                    <p class="text-gray-700">Unggul dalam Intelektual, Tangguh dalam Leadership dan Enterpreneurship yang Islami.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Sekolah -->
+    <section id="galeri" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Galeri Sekolah</h2>
+                <p class="text-lg text-gray-600">Koleksi foto kegiatan dan fasilitas sekolah</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/gambar/Logoberanda/DSC_0581.jpg" alt="Gedung Sekolah" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-900">Gedung Sekolah</h3>
+                        <p class="text-gray-600">Fasilitas utama untuk kegiatan belajar mengajar.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/gambar/gallery/labkom.jpg" alt="Lab Komputer" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-900">Lab Komputer</h3>
+                        <p class="text-gray-600">Fasilitas modern untuk pembelajaran teknologi.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/gambar/gallery/Pelatikan pengrus IPM.jpg" alt="Kegiatan Siswa" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-900">Pelantikan Pengurus IPM</h3>
+                        <p class="text-gray-600">Kegiatan pelantikan pengrus IPM.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prestasi Sekolah -->
+    <section id="prestasi" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Prestasi Sekolah</h2>
+                <p class="text-lg text-gray-600">Pencapaian yang membanggakan dari siswa dan sekolah</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gradient-to-r from-green-400 to-blue-500 text-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-4">Gold Medal Thailand International Matematic Olympiad (TIMO) tingkat International</h3>
+                    <p class="text-lg">Tim siswa kami berhasil meraih juara gold medal dalam kompetisi olimpiade matematika tingkat International tahun 2025.</p>
+                </div>
+                <div class="bg-gradient-to-r from-purple-400 to-pink-500 text-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-4">Juara 1 IPA Olimpiade Sains Nasional (OSN) tingkat Kabupaten</h3>
+                    <p class="text-lg">Siswa kami berhasil memperoleh juara 1 OSN pada Tingkat Kabupaten.</p>
+                </div>
+                <div class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-4">Juara 1 Karate Putra Olimpiade Olahraga Siswa Nasional (O2SN) tingkat Kabupaten</h3>
+                    <p class="text-lg">Siswa kami berhasil memperoleh Juara 1 karate Pada (O2SN) Tingkat Kabupaten.</p>
+                </div>
+                <div class="bg-gradient-to-r from-indigo-400 to-cyan-500 text-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-4">Juara 1 Kaligrafi Putra MAPSI Tingkat Kecamatan Karanganyar</h3>
+                    <p class="text-lg">Siswa Putra Kami Berhsil memperoleh Juara 1 Kaligrafi Tingkat Kecamatan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Kontak Kami</h3>
+                    <p class="mb-2"><strong>Alamat:</strong> Jl. AW Monginsidi No.6, Manggeh, Tegalgede, Kec. Karanganyar, Kabupaten Karanganyar, Jawa Tengah 57714</p>
+                    <p class="mb-2"><strong>Telepon:</strong> (0271) 495167</p>
+                    <p class="mb-2"><strong>Email:</strong> darularqomkra@gmail.com</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">link Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#beranda" class="hover:text-secondary transition duration-300">Beranda</a></li>
+                        <li><a href="#profil" class="hover:text-secondary transition duration-300">Profil Sekolah</a></li>
+                        <li><a href="#galeri" class="hover:text-secondary transition duration-300">Galeri</a></li>
+                        <li><a href="#prestasi" class="hover:text-secondary transition duration-300">Prestasi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p>&copy; 2025 SMP DARUL ARQOM. HAK CIPTA DI LINDUNGI.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu after clicking a link
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
